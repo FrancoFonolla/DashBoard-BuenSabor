@@ -56,10 +56,10 @@ import MainChart from './MainChart'
 
 const Dashboard = () => {
   const progressExample = [
-    { title: 'Visits', value: '29.703 Users', percent: 40, color: 'success' },
-    { title: 'Unique', value: '24.093 Users', percent: 20, color: 'info' },
-    { title: 'Pageviews', value: '78.706 Views', percent: 60, color: 'warning' },
-    { title: 'New Users', value: '22.123 Users', percent: 80, color: 'danger' },
+    { title: 'Visitas', value: '29.703 Usuarios', percent: 40, color: 'success' },
+    { title: 'Unique', value: '24.093 Usuarios', percent: 20, color: 'info' },
+    { title: 'Vistas de pagina', value: '78.706 Visitas', percent: 60, color: 'warning' },
+    { title: 'New Users', value: '22.123 Usuarios', percent: 80, color: 'danger' },
     { title: 'Bounce Rate', value: 'Average Rate', percent: 40.15, color: 'primary' },
   ]
 
@@ -178,22 +178,22 @@ const Dashboard = () => {
 
   return (
     <>
-      <WidgetsDropdown className="mb-4" />
+      {/* <WidgetsDropdown className="mb-4" /> */}
       <CCard className="mb-4">
         <CCardBody>
           <CRow>
             <CCol sm={5}>
               <h4 id="traffic" className="card-title mb-0">
-                Traffic
+                Ventas
               </h4>
-              <div className="small text-body-secondary">January - July 2023</div>
+              <div className="small text-body-secondary">Enero - Julio 2023</div>
             </CCol>
             <CCol sm={7} className="d-none d-md-block">
-              <CButton color="primary" className="float-end">
+              {/* <CButton color="primary" className="float-end">
                 <CIcon icon={cilCloudDownload} />
-              </CButton>
+              </CButton> */}
               <CButtonGroup className="float-end me-3">
-                {['Day', 'Month', 'Year'].map((value) => (
+                {['Dia', 'Mes', 'Año'].map((value) => (
                   <CButton
                     color="outline-secondary"
                     key={value}
@@ -208,7 +208,7 @@ const Dashboard = () => {
           </CRow>
           <MainChart />
         </CCardBody>
-        <CCardFooter>
+        {<CCardFooter>
           <CRow
             xs={{ cols: 1, gutter: 4 }}
             sm={{ cols: 2 }}
@@ -231,10 +231,10 @@ const Dashboard = () => {
               </CCol>
             ))}
           </CRow>
-        </CCardFooter>
+        </CCardFooter>}
       </CCard>
-      <WidgetsBrand className="mb-4" withCharts />
-      <CRow>
+      {/* <WidgetsBrand className="mb-4" withCharts /> */}
+      {/* <CRow>
         <CCol xs>
           <CCard className="mb-4">
             <CCardHeader>Traffic {' & '} Sales</CCardHeader>
@@ -379,7 +379,7 @@ const Dashboard = () => {
             </CCardBody>
           </CCard>
         </CCol>
-      </CRow>
+      </CRow> */}
     </>
   )
 }
