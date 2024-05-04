@@ -74,7 +74,7 @@ const _nav = [
     to: '/base',
     icon: <CIcon icon={cilPuzzle} customClassName="nav-icon" />,
     items: [
-      {
+      /* {
         component: CNavItem,
         name: 'Accordion',
         to: '/base/accordion',
@@ -143,7 +143,7 @@ const _nav = [
         component: CNavItem,
         name: 'Tooltips',
         to: '/base/tooltips',
-      },
+      }, */
     ],
   },
   /* {
@@ -219,7 +219,7 @@ const _nav = [
   {
     component: CNavItem,
     name: 'Insumos',
-    to: '/charts',
+    to: '/insumos',
     icon: <CIcon icon={cilChartPie} customClassName="nav-icon" />,
   },
   /* {
